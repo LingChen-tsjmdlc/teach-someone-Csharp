@@ -18,6 +18,7 @@ namespace StudyCSharp
             Console.WriteLine("第三题输出：");
             Problenm3();
             Console.ReadKey();
+            Console.WriteLine("1111");
         }
 
         /*
