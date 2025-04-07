@@ -7,18 +7,18 @@ namespace StudyCSharp
     {      
          static public void Homework()
          {
-            Console.WriteLine("第一题输出：");
+            Console.WriteLine("\n第一题输出：");
             Problenm1();
             Console.ReadKey();
 
-            Console.WriteLine("第二题输出：");
+            Console.WriteLine("\n第二题输出：");
             Problenm2();
             Console.ReadKey();
 
-            Console.WriteLine("第三题输出：");
+            Console.WriteLine("\n第三题输出：");
             Problenm3();
             Console.ReadKey();
-        }
+         }
 
         /*
         /// <------- 1. 根据注释提示补全代码 ------->
@@ -83,7 +83,7 @@ namespace StudyCSharp
             float price = 15.5f;
             int quantity = 2;
             float total = price * quantity;
-            Console.WriteLine($"商品：{item}，单价：{price}元，数量：{quantity}个，总价：{total}元");
+            Console.WriteLine($"商品：{0}，单价：{1}元，数量：{quantity}个，总价：{total}元", item, price);
         }
     }
     

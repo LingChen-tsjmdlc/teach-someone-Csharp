@@ -14,8 +14,8 @@ namespace StudyCSharp   //  命名空间
             float weight = 40.5f;      // 小数类型
             bool isEndangered = true;  // 布尔类型
 
-            Console.WriteLine("动物园有一只" + age + "岁的"+ animal + "，体重"+ weight+ "公斤，是否濒危：" + isEndangered);
+            Console.WriteLine("\n动物园有一只" + age + "岁的"+ animal + "，体重"+ weight+ "公斤，是否濒危：" + isEndangered);
             Console.ReadKey();
          }
     }
-}
+} 
