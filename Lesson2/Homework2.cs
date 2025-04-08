@@ -32,14 +32,21 @@ namespace StudyCSharp
                 注意浮点数与整数转换的精度问题。
 
             结果：
-                单价: 59.99, 数量: 3, 总金额: 179
+                单价: 59.99, 数量: 3, 总金额: 177
          */
         /// <summary>
         /// 题目1：商品价格计算
         /// </summary>
         public static void CommodityPrice()
         {
-            
+            float price1 = 59.99f;
+            int price2;
+            price2 = (int)price1;
+            float lump_sum = price2 + price2 + price2;
+            int quantity = 3;
+            Console.WriteLine($"单价：{price1},数量:{quantity},总金额：{lump_sum}");
+
+
         }
 
 
@@ -61,7 +68,14 @@ namespace StudyCSharp
         /// </summary>
         public static void FindRemainder()
         {
-            
+            string inputA = "15.6";
+            string inputB = "7";
+            float a1 = float.Parse(inputA);
+            int b = int.Parse(inputB);
+            int a2;
+            a2 = (int)a1;
+            Console.WriteLine("a2 % b = {0}", a2 % b);
         }
+
     }
 }
