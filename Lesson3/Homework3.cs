@@ -71,8 +71,6 @@ namespace StudyCSharp
                 // 6-8月 - 夏季
                 // 9-11月 - 秋季
                 // 其他输入 - "无效月份"
-            // 提示：
-                case 语句说过了比较像 if 语句，所以 “ case >=3: ” 是允许的
         */
         private static void Question3()
         {
