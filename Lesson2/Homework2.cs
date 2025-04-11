@@ -42,11 +42,9 @@ namespace StudyCSharp
             float price1 = 59.99f;
             int price2;
             price2 = (int)price1;
-            float lump_sum = price2 + price2 + price2;
             int quantity = 3;
+            float lump_sum = price2 * quantity;
             Console.WriteLine($"单价：{price1},数量:{quantity},总金额：{lump_sum}");
-
-
         }
 
 
@@ -70,11 +68,12 @@ namespace StudyCSharp
         {
             string inputA = "15.6";
             string inputB = "7";
-            float a1 = float.Parse(inputA);
-            int b = int.Parse(inputB);
-            int a2;
-            a2 = (int)a1;
-            Console.WriteLine("a2 % b = {0}", a2 % b);
+            float a1 = float.Parse(inputA); // 字符串 转 浮点数
+            int inputBToInt = int.Parse(inputB);  // 字符串 转 整数
+            //int a2;           // 1. 声明变量
+            //a2 = (int)a1;     // 2. 赋值变量
+            int a2 = (int)a1;   // 声明 + 赋值 一起写，转换为整数
+            Console.WriteLine("a2 % b = {0}", a2 % inputBToInt);  // 取余数
         }
 
     }
