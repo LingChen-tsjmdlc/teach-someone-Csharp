@@ -47,12 +47,25 @@
     <Compile Include="Lesson1\Lesson1.cs" />
     <Compile Include="Lesson2\Homework2.cs" />
     <Compile Include="Lesson2\Lesson2.cs" />
+    <Compile Include="Lesson3\Homework3.cs" />
     <Compile Include="Lesson3\Lesson3.cs" />
+    <Compile Include="Lesson4\Homework4.cs" />
+    <Compile Include="Lesson4\Lesson4.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Lesson3\第三课笔记.md" />
+    <None Include="Lesson4\第四课笔记.md" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="Lesson3\if.png" />
+    <Content Include="Lesson3\if_else.png" />
+    <Content Include="Lesson3\if_else_if.png" />
+    <Content Include="Lesson3\switch语句流程.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

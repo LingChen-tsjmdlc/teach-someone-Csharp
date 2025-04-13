@@ -20,8 +20,14 @@ namespace StudyCSharp
             //Homework2.Homework();
 
             // 第三节课
-            Console.WriteLine("\n\n\n <-- 第三节课 -->");
-            Lesson3.Lessons3();
+            //Console.WriteLine("\n\n\n <-- 第三节课 -->");
+            //Lesson3.Lessons3();
+            //Homework3.Homework();
+
+            // 第四节课
+            Console.WriteLine("\n\n\n <-- 第四节课 -->");
+            //Lesson4.Lessons4();
+            Homework4.Homework();
         }
     }
 }
