@@ -28,6 +28,8 @@ namespace StudyCSharp
             Console.WriteLine("\n\n\n <-- 第四节课 -->");
             //Lesson4.Lessons4();
             Homework4.Homework();
+
+            //类型.方法();
         }
     }
 }
