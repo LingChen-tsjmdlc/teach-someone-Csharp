@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "E:\\VS_2022\\teach-someone-Csharp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37F536E2-61B6-4BB8-BE8D-865776F99636}|StudyCSharp.csproj|E:\\VS_2022\\teach-someone-Csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37F536E2-61B6-4BB8-BE8D-865776F99636}|StudyCSharp.csproj|e:\\vs_2022\\teach-someone-csharp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37F536E2-61B6-4BB8-BE8D-865776F99636}|StudyCSharp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37F536E2-61B6-4BB8-BE8D-865776F99636}|StudyCSharp.csproj|E:\\VS_2022\\teach-someone-Csharp\\lesson1\\homework1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37F536E2-61B6-4BB8-BE8D-865776F99636}|StudyCSharp.csproj|solutionrelative:lesson1\\homework1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37F536E2-61B6-4BB8-BE8D-865776F99636}|StudyCSharp.csproj|e:\\vs_2022\\teach-someone-csharp\\lesson1\\lesson1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37F536E2-61B6-4BB8-BE8D-865776F99636}|StudyCSharp.csproj|solutionrelative:lesson1\\lesson1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\VS_2022\\teach-someone-Csharp\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{37F536E2-61B6-4BB8-BE8D-865776F99636}|StudyCSharp.csproj|e:\\vs_2022\\teach-someone-csharp\\lesson6\\homework6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37F536E2-61B6-4BB8-BE8D-865776F99636}|StudyCSharp.csproj|solutionrelative:lesson6\\homework6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,48 +28,22 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "E:\\VS_2022\\teach-someone-Csharp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAiwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T15:55:40.671Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "README.md",
-              "DocumentMoniker": "E:\\VS_2022\\teach-someone-Csharp\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "E:\\VS_2022\\teach-someone-Csharp\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-04-03T16:11:12.062Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Lesson1.cs",
-              "DocumentMoniker": "E:\\VS_2022\\teach-someone-Csharp\\Lesson1\\Lesson1.cs",
-              "RelativeDocumentMoniker": "Lesson1\\Lesson1.cs",
-              "ToolTip": "E:\\VS_2022\\teach-someone-Csharp\\Lesson1\\Lesson1.cs",
-              "RelativeToolTip": "Lesson1\\Lesson1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAmwBQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T15:55:55.266Z",
+              "WhenOpened": "2025-04-21T04:47:51.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Homework1.cs",
-              "DocumentMoniker": "E:\\VS_2022\\teach-someone-Csharp\\Lesson1\\Homework1.cs",
-              "RelativeDocumentMoniker": "Lesson1\\Homework1.cs",
-              "ToolTip": "E:\\VS_2022\\teach-someone-Csharp\\Lesson1\\Homework1.cs",
-              "RelativeToolTip": "Lesson1\\Homework1.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAuwBMAAAAeAAAAAAAAAA==",
+              "Title": "Homework6.cs",
+              "DocumentMoniker": "E:\\VS_2022\\teach-someone-Csharp\\Lesson6\\Homework6.cs",
+              "RelativeDocumentMoniker": "Lesson6\\Homework6.cs",
+              "ToolTip": "E:\\VS_2022\\teach-someone-Csharp\\Lesson6\\Homework6.cs",
+              "RelativeToolTip": "Lesson6\\Homework6.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T15:55:52.715Z",
+              "WhenOpened": "2025-04-21T04:43:59.044Z",
               "EditorCaption": ""
             }
           ]
