@@ -62,6 +62,7 @@
     <None Include="Lesson3\第三课笔记.md" />
     <None Include="Lesson4\第四课笔记.md" />
     <None Include="Lesson5\第五课笔记.md" />
+    <None Include="Lesson6\第六课笔记.md" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
