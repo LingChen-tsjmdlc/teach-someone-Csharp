@@ -33,8 +33,34 @@ namespace StudyCSharp
         /* 输出结果：
                     优秀: 2, 良好: 2, 及格: 4, 不及格: 2
         */
-        public static void Q1() 
+        public static void Q1()
         {
+            int[] scores = new int[] { 88, 74, 85, 92, 21, 70, 97, 79, 66, 57 };
+            int excellent = 0;
+            int good = 0;
+            int pass = 0;
+            int fail = 0;
+            foreach (int grede in scores)
+            {
+                switch (grede / 10)
+                {
+                    case 10:
+                    case 9:
+                        excellent++;
+                        break;
+                    case 8:
+                        good++;
+                        break;
+                    case 7:
+                    case 6:
+                        pass++;
+                        break;
+                    default:
+                        fail++;
+                        break;
+                }
+                Console.WriteLine($"优秀：{excellent},良好：{good},及格:{pass},不及格:{fail}");
+            }
 
         }
 
@@ -56,12 +82,33 @@ namespace StudyCSharp
 
         /* 输出结果：
           5   0   0   4
-          0  12   0   7
+          0  11   0   7
           8   0   0   0
           0  10   0   0
         */
         public static void Q2()
         {
+                int[,] matrix = {
+                    { 5, -2, 9, 4 },
+                    { -1, 11, 3, 7 },
+                    { 8, 6, -4, 12},
+                    { -5, 10, 15, -3 }
+                };
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    if (i < 0)
+                    {
+                        matrix[i, 0] = 0;
+                    }
+                    else if (j < 0) {
+
+                    
+                    }
+
+                }
+            }
 
         }
 
@@ -76,6 +123,12 @@ namespace StudyCSharp
 
         public static void Q3()
         {
+            int[] numbers = new int[] { 5, -2, 9, -4, 0, 7 };
+            for (int i = 0; i <= numbers.Length; i++) {
+                if (i < 0) {
+                    numbers[i] = 0;
+                }
+            }
 
         }
     }
