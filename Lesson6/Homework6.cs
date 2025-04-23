@@ -59,8 +59,8 @@ namespace StudyCSharp
                         fail++;
                         break;
                 }
-                Console.WriteLine($"优秀：{excellent},良好：{good},及格:{pass},不及格:{fail}");
             }
+            Console.WriteLine($"优秀：{excellent},良好：{good},及格:{pass},不及格:{fail}");
 
         }
 
@@ -88,7 +88,7 @@ namespace StudyCSharp
         */
         public static void Q2()
         {
-                int[,] matrix = {
+            int[,] matrix = {
                     { 5, -2, 9, 4 },
                     { -1, 11, 3, 7 },
                     { 8, 6, -4, 12},
@@ -98,19 +98,13 @@ namespace StudyCSharp
             {
                 for (int j = 0; j < matrix.GetLength(1); j++)
                 {
-                    if (i < 0)
-                    {
-                        matrix[i, 0] = 0;
-                    }
-                    else if (j < 0) {
-
-                    
-                    }
 
                 }
-            }
 
+            }
         }
+    } 
+}
 
         //题目三：数组元素替换与统计
         //要求：
