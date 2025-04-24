@@ -18,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Homework6.cs",
+              "DocumentMoniker": "E:\\VS_2022\\teach-someone-Csharp\\Lesson6\\Homework6.cs",
+              "RelativeDocumentMoniker": "Lesson6\\Homework6.cs",
+              "ToolTip": "E:\\VS_2022\\teach-someone-Csharp\\Lesson6\\Homework6.cs*",
+              "RelativeToolTip": "Lesson6\\Homework6.cs*",
+              "ViewState": "AgIAABABAAAAAAAAAAAQwCABAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T07:37:03.248Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -30,21 +43,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T04:47:51.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Homework6.cs",
-              "DocumentMoniker": "E:\\VS_2022\\teach-someone-Csharp\\Lesson6\\Homework6.cs",
-              "RelativeDocumentMoniker": "Lesson6\\Homework6.cs",
-              "ToolTip": "E:\\VS_2022\\teach-someone-Csharp\\Lesson6\\Homework6.cs",
-              "RelativeToolTip": "Lesson6\\Homework6.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAowGoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-21T04:43:59.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-21T04:47:51.375Z"
             }
           ]
         }

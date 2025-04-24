@@ -67,8 +67,6 @@ namespace StudyCSharp
                 
             }
             Console.WriteLine($"优秀：{excellent},良好：{good},及格:{pass},不及格:{fail}");
-
-            Console.WriteLine($"优秀：{excellent},良好：{good},及格:{pass},不及格:{fail}");
         }
 
         //题目二：矩阵特殊元素处理
@@ -263,6 +261,43 @@ namespace StudyCSharp
 
         public static void Q5()
         {
+            bool functioning = true;  //运行状态
+
+            while (functioning)
+            {
+                Console.WriteLine("请输入字母字符串：");
+                string word = Console.ReadLine();
+                string wordVowel = word.ToLower();
+
+                if (string.IsNullOrEmpty(wordVowel))
+                {
+                    Console.WriteLine("输入不能为空！");
+                }
+
+                Console.WriteLine("请输入1或2序号数字：");
+                string number = Console.ReadLine();
+
+                if (int.TryParse(number,out int oneNumber)) {
+
+                    switch (oneNumber)
+                    {
+                        case 1:
+                            Console.WriteLine("开始统计");
+
+                            string[] vowels = new string[] { "a", "e", "i" ,"o","u"};
+                            foreach (var vowel in vowels)
+                            {
+                                Console.WriteLine($"{vowel}");
+                            }
+
+                            break;
+                        case 2:
+                            Console.WriteLine("退出程序");
+                            break;
+                    }
+                }
+
+            }
             
         }
     }
