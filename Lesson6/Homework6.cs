@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudyCSharp
 {
-    public static class Homework6
+    public class Homework6
     {
         static public void Homework()
         {
@@ -261,44 +261,87 @@ namespace StudyCSharp
 
         public static void Q5()
         {
-            bool functioning = true;  //运行状态
+            bool isRuning = true;  //运行状态
 
-            while (functioning)
+            while (isRuning)
             {
-                Console.WriteLine("请输入字母字符串：");
-                string word = Console.ReadLine();
-                string wordVowel = word.ToLower();
+                // 显示菜单
+                Console.WriteLine("请选择操作：");
+                Console.WriteLine("1. 统计元音");
+                Console.WriteLine("2. 退出程序");
+                Console.WriteLine("请输入数字（1 / 2）：");
 
-                if (string.IsNullOrEmpty(wordVowel))
+                string choice = Console.ReadLine();
+
+                if (int.TryParse(choice,out int num))
                 {
-                    Console.WriteLine("输入不能为空！");
-                }
-
-                Console.WriteLine("请输入1或2序号数字：");
-                string number = Console.ReadLine();
-
-                if (int.TryParse(number,out int oneNumber)) {
-
-                    switch (oneNumber)
+                    switch (num)
                     {
                         case 1:
-                            Console.WriteLine("开始统计");
-
-                            string[] vowels = new string[] { "a", "e", "i" ,"o","u"};
-                            foreach (var vowel in vowels)
-                            {
-                                Console.WriteLine($"{vowel}");
-                            }
-
+                            Choose1();
                             break;
+
                         case 2:
-                            Console.WriteLine("退出程序");
+                            isRuning = Choose2();
+                            break;
+
+                        default:
+                            Console.WriteLine("错误！请输入 1 或者是 2 ");
                             break;
                     }
                 }
-
+                else
+                {
+                    Console.WriteLine("错误！请输入数字！");
+                }
             }
-            
+        }
+
+        private static bool Choose2()
+        {
+            bool isRuning;
+            Console.WriteLine("退出程序！");
+            isRuning = false;
+            return isRuning;
+        }
+
+
+        /// <summary>
+        /// 选择1的时候
+        /// </summary>
+        private static void Choose1()
+        {
+            Console.WriteLine("请输入英文的字符串：");
+            string userInput = Console.ReadLine();
+
+            if (string.IsNullOrEmpty(userInput))
+            {
+                Console.WriteLine("错误！你的输入为空。");
+            }
+            int a = 0, e = 0, i = 0, o = 0, u = 0;
+            string lowerUserInput = userInput.ToLower();    //转换成小写
+            foreach (char c in lowerUserInput)
+            {
+                switch (c)
+                {
+                    case 'a':
+                        a++;
+                        break;
+                    case 'e':
+                        e++;
+                        break;
+                    case 'i':
+                        i++;
+                        break;
+                    case 'o':
+                        o++;
+                        break;
+                    case 'u':
+                        u++;
+                        break;
+                }
+            }
+            Console.WriteLine($"统计结果：a:{a}个，e:{e}个，i:{i}个，o :{o}个，u:{u}个，");
         }
     }
 }

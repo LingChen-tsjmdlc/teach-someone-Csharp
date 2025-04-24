@@ -54,6 +54,7 @@
     <Compile Include="Lesson4\Test.cs" />
     <Compile Include="Lesson5\Homework5.cs" />
     <Compile Include="Lesson6\Homework6.cs" />
+    <Compile Include="Lesson7\Homework7.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -63,6 +64,7 @@
     <None Include="Lesson4\第四课笔记.md" />
     <None Include="Lesson5\第五课笔记.md" />
     <None Include="Lesson6\第六课笔记.md" />
+    <None Include="Lesson7\第七课笔记.md" />
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
