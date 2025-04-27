@@ -12,7 +12,15 @@ namespace StudyCSharp
         // 做完的题目在此方法里面调用
         static public void Homework()
         {
-            ConvertTemperature(0, true);
+            //ConvertTemperature(0, true);Z
+            int[] grades1 = { 5, 3, 9, 1, 4 };
+            AnalyzeGrades(grades1);
+            int[] grades2 = { 5, 78, 50, 30, 10 };
+            AnalyzeGrades(grades2);
+            int[] grades3 = { 55, 33, 99, 11, 44 };
+            AnalyzeGrades(grades3);
+
+            Console.ReadKey();
         }
 
         //1. 基础题：温度转换函数
@@ -30,31 +38,20 @@ namespace StudyCSharp
         /// </summary>
         /// <param name="temperature">温度</param>
         /// <param name="isCelsiusToFahrenheit">转换方向。为 true，将摄氏温度转换为华氏；否则将华氏转换为摄氏。</param>
-        public static void ConvertTemperature(double temperature, bool isCelsiusToFahrenheit)
-        {
-            // 摄氏温度转换为华氏
-            if (isCelsiusToFahrenheit)
-            {
-                double temperatureToFahrenheit = temperature * 9 / 5 + 32;
-                Console.WriteLine($"转换完成的温度为{temperatureToFahrenheit}°F");
-            }
-            // 华氏转换为摄氏
-            else
-            {
-                Console.WriteLine($"华氏 → 摄氏：{celsiusTemperature = (fahrenheitTemperature - 32) * 5 / 9}");
-            }
-        }
-
-
-
-
-
-
-
-
-
-
-
+        //public static void ConvertTemperature(double temperature, bool isCelsiusToFahrenheit)
+        //{
+        //    // 摄氏温度转换为华氏
+        //    if (isCelsiusToFahrenheit)
+        //    {
+        //        double temperatureToFahrenheit = temperature * 9 / 5 + 32;
+        //        Console.WriteLine($"转换完成的温度为{temperatureToFahrenheit}°F");
+        //    }
+        //    // 华氏转换为摄氏
+        //    else
+        //    {
+        //        Console.WriteLine($"华氏 → 摄氏：{celsiusTemperature = (fahrenheitTemperature - 32) * 5 / 9}");
+        //    }
+        //}
 
 
         //2. 应用题：学生成绩分析函数
@@ -80,43 +77,44 @@ namespace StudyCSharp
         //          Array.Sort(numbers);    // 输出: 1, 3, 4, 5, 9
 
 
-            public static void AnalyzeGrades()
+        public static void AnalyzeGrades(int[] grades)
+        {
+            //int[] grades = { 1, 2, 3, 4 };
+            if (grades.Length == 0)
             {
-                int[] grades = { };
-                if (grades.Length == 0)
-                {
                 Console.WriteLine("成绩数组为空，输出异常！");
-                }
-
-                HighestScore(grades);
-                LowestScore(grades);
-                AverageScore(grades);
-
             }
-            public static void HighestScore(int[] grades)
-            {
+
+            HighestScore(grades);
+            LowestScore(grades);
+            AverageScore(grades);
+
+        }
+
+
+        public static void HighestScore(int[] grades)
+        {
             Array.Reverse(grades);
             int maxScore = grades[0];
             Console.WriteLine($"最高分：{maxScore}");
-            }
+        }
 
-            public static void LowestScore(int[] grades)
-            {
+        public static void LowestScore(int[] grades)
+        {
             Array.Sort(grades);
             int minScore = grades[0];
             Console.WriteLine($"最低分：{minScore}");
 
-            }
+        }
 
-            public static void AverageScore(int[] grades)
-            {
+        public static void AverageScore(int[] grades)
+        {
             int sum = 0;
             for (int i = 0; i < grades.Length; i++)
             {
                 if (grades[i] < 0 || grades[i] > 100)
                 {
                     Console.WriteLine("忽略无效分数.");
-
                 }
             }
 
@@ -129,6 +127,20 @@ namespace StudyCSharp
 
         }
 
-        
+
+
+        //3. 应用题：计算⚪的面积和周长
+        //    要求：
+        //    写一个总方法 ，调用下面的两个方法
+        //    CalculateArea: 计算圆形的面积
+        //    CalculateCircumference: 计算圆形的周长
+
+        //    注意：
+        //      1.不能为负数
+
+        //    参数：圆的半径（float）
+
+        // pi（Π） ： Math.PI
+
     }
 }
