@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace StudyCSharp
 {
     public class Homework7
-    {
+    {       
         // 做完的题目在此方法里面调用
         static public void Homework()
         {
+            ConvertTemperature();
 
         }
-
 
         //1. 基础题：温度转换函数
         //    要求：
@@ -24,6 +24,21 @@ namespace StudyCSharp
         //    公式：
         //    摄氏 → 华氏：华氏温度 = 摄氏温度* 9/5 + 32
         //    华氏 → 摄氏：摄氏温度 = (华氏温度 - 32) * 5/9
+
+        public static void ConvertTemperature()
+        {
+            double celsiusTemperature = 0, fahrenheitTemperature = 0;
+            bool isCelsiusToFahrenheit = true;
+
+            if (isCelsiusToFahrenheit)
+            {
+                Console.WriteLine($"摄氏 → 华氏： {fahrenheitTemperature = celsiusTemperature * 9 / 5 + 32}");
+            }
+            else
+            {
+                Console.WriteLine($"华氏 → 摄氏：{celsiusTemperature = (fahrenheitTemperature - 32) * 5/9}");
+            }
+        }
 
 
 
@@ -59,6 +74,84 @@ namespace StudyCSharp
         //          int[] numbers = { 5, 3, 9, 1, 4 };
         //          Array.Sort(numbers);    // 输出: 1, 3, 4, 5, 9
 
+        public static void AnalyzeGrades()
+        {
+            Console.WriteLine("欢迎来到成绩分析系统!");
+            Console.WriteLine("请输入你想要分析的一组成绩0~100,用逗号或空格分隔：");
+            string input = Console.ReadLine();
+            string[] grades = input.Split(' ',',');
+            int[] scores =new int[grades.Length];
+            Array.Sort(scores);
+
+            for (int i = 0; i < scores.Length; i++)
+            {
+                if (int.TryParse(grades[i], out int number))
+                {
+                    scores[i] = number;
+
+                    if (number < 0 || number > 100)
+                    {
+                        Console.WriteLine($"输入的{scores[i]}不是有效整数，已忽略");
+                    }
+                }
+            }
+
+                if (scores.Length == 0)
+                {
+                    Console.WriteLine("输入为空，输出异常！");
+                    return;
+                }
+            
+            int excellent = 0; 
+            int good = 0;
+            int pass = 0;
+            int fail = 0;
+
+            foreach (int number in scores)
+            {
+                switch (number / 10)
+                {
+                    case 10:
+                    case 9:
+                        excellent++;
+                        break;
+                    case 8:
+                    case 7:
+                        good++;
+                        break;
+                    case 6:
+                        pass++;
+                        break;
+
+                    default:
+                        fail++;
+                        break;
+                }
+            }
+            Console.WriteLine($"优秀：{excellent}，良好：{good}，及格：{pass}，不及格：{fail}。");
+
+            int mixScore = scores[0];
+            Console.WriteLine($"最高分{mixScore}");
+
+
+        }
+
+        public static void HighestScore()
+        {
+            int maxScore = scores[-1];
+            Console.WriteLine($"最高分{scores[-1]}");
+
+        }
+
+        public static void LowestScore()
+        {
+
+        }
+
+        public static void AverageScore()
+        {
+
+        }
 
 
 
