@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace StudyCSharp
 {
     public class Homework7
-    {       
+    {
         // 做完的题目在此方法里面调用
         static public void Homework()
         {
@@ -37,7 +37,7 @@ namespace StudyCSharp
             }
             else
             {
-                Console.WriteLine($"华氏 → 摄氏：{celsiusTemperature = (fahrenheitTemperature - 32) * 5/9}");
+                Console.WriteLine($"华氏 → 摄氏：{celsiusTemperature = (fahrenheitTemperature - 32) * 5 / 9}");
             }
         }
 
@@ -75,39 +75,56 @@ namespace StudyCSharp
         //          int[] numbers = { 5, 3, 9, 1, 4 };
         //          Array.Sort(numbers);    // 输出: 1, 3, 4, 5, 9
 
-        public static void AnalyzeGrades(float HighestScore, float LowestScore, float AverageScore)
-        {
-            float[] grades = { };
-            Array.Sort(grades);
 
-            if (grades.Length == 0)
+            public static void AnalyzeGrades()
             {
-                Console.WriteLine("成绩组为空，输出异常！");
-                return;
-            }
-            
-            for (int i = 0; i < grades. Length; i++)
-            {
-                if (grades[i] < 0|| grades[i] > 100)
+                int[] grades = { };
+                if (grades.Length == 0)
                 {
-                    Console.WriteLine("忽略无效分数！");
-
+                Console.WriteLine("成绩数组为空，输出异常！");
                 }
 
+                HighestScore(grades);
+                LowestScore(grades);
+                AverageScore(grades);
+
+            }
+            public static void HighestScore(int[] grades)
+            {
+            Array.Reverse(grades);
+            int maxScore = grades[0];
+            Console.WriteLine($"最高分：{maxScore}");
             }
 
-            float minScore = grades[0];
-            float maxScore = grades[-1];
-            //求平均数
-            float average = 0;
+            public static void LowestScore(int[] grades)
+            {
+            Array.Sort(grades);
+            int minScore = grades[0];
+            Console.WriteLine($"最低分：{minScore}");
 
-            Console.WriteLine($"最高分:{maxScore},最低分{minScore},平均分{average}");
-               
+            }
 
+            public static void AverageScore(int[] grades)
+            {
+            int sum = 0;
+            for (int i = 0; i < grades.Length; i++)
+            {
+                if (grades[i] < 0 || grades[i] > 100)
+                {
+                    Console.WriteLine("忽略无效分数.");
 
+                }
+            }
 
+            foreach (int i in grades)
+            {
+                sum += i;
+            }
+            float average = sum / grades.Length;
+            Console.WriteLine($"平均分：{average}");
 
         }
 
+        
     }
 }
