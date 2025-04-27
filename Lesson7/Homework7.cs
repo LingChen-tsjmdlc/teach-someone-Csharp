@@ -12,8 +12,7 @@ namespace StudyCSharp
         // 做完的题目在此方法里面调用
         static public void Homework()
         {
-            ConvertTemperature();
-
+            ConvertTemperature(0, true);
         }
 
         //1. 基础题：温度转换函数
@@ -23,18 +22,23 @@ namespace StudyCSharp
         //    若 isCelsiusToFahrenheit 为 true，将摄氏温度转换为华氏；否则将华氏转换为摄氏。
 
         //    公式：
-        //    摄氏 → 华氏：华氏温度 = 摄氏温度* 9/5 + 32
+        //    摄氏 → 华氏：华氏温度 = 摄氏温度 * 9/5 + 32
         //    华氏 → 摄氏：摄氏温度 = (华氏温度 - 32) * 5/9
 
-        public static void ConvertTemperature()
+        /// <summary>
+        /// 温度转换函数
+        /// </summary>
+        /// <param name="temperature">温度</param>
+        /// <param name="isCelsiusToFahrenheit">转换方向。为 true，将摄氏温度转换为华氏；否则将华氏转换为摄氏。</param>
+        public static void ConvertTemperature(double temperature, bool isCelsiusToFahrenheit)
         {
-            double celsiusTemperature = 0, fahrenheitTemperature = 0;
-            bool isCelsiusToFahrenheit = true;
-
+            // 摄氏温度转换为华氏
             if (isCelsiusToFahrenheit)
             {
-                Console.WriteLine($"摄氏 → 华氏： {fahrenheitTemperature = celsiusTemperature * 9 / 5 + 32}");
+                double temperatureToFahrenheit = temperature * 9 / 5 + 32;
+                Console.WriteLine($"转换完成的温度为{temperatureToFahrenheit}°F");
             }
+            // 华氏转换为摄氏
             else
             {
                 Console.WriteLine($"华氏 → 摄氏：{celsiusTemperature = (fahrenheitTemperature - 32) * 5 / 9}");
